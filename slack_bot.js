@@ -244,3 +244,13 @@ function formatUptime(uptime) {
     uptime = uptime + ' ' + unit;
     return uptime;
 }
+
+controller.hears('つらい',['direct_message','direct_mention','mention'],function(bot,message) {
+      bot.reply(message,'つらくない');
+});
+ controller.hears('疲れた',['direct_message','direct_mention','mention'],function(bot,message) {
+      bot.reply(message,'気のせい');
+});
+ controller.hears('眠い',['direct_message','direct_mention','mention'],function(bot,message) {
+      bot.reply(message,'若いから大丈夫');
+});
