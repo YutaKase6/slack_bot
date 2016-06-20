@@ -254,3 +254,6 @@ controller.hears('つらい',['direct_message','direct_mention','mention'],funct
  controller.hears('眠い',['direct_message','direct_mention','mention'],function(bot,message) {
       bot.reply(message,'若いから大丈夫');
 });
+controller.hears('かまって',['direct_message','direct_mention','mention'],function(bot,message) {
+      bot.reply(message,'うるせぇ');
+});
